@@ -11,8 +11,40 @@
   <title>Prueba Técnica Adriel Lopez</title>
 </head>
 <body>
-  <div id="map"></div>
 
+  <div id="map"></div>
+  <form action="">
+    <div class="formdiv">
+      <label for="name">Nombre</label>
+      <input type="text" placeholder="ej: AEROTERRA S.A.">
+    </div>
+    <div class="formdiv">
+      <label for="">Dirección</label>
+      <input type="text"  placeholder="ej: Av. Eduardo Madero 1020">
+    </div class="formdiv">
+    <div class="formdiv">
+      <label for="">Teléfono</label>
+      <input type="text"  placeholder="ej: 54 9 11 5272 0900">
+    </div>
+    <div class="formdiv">
+      <label for="">Categoría</label>
+      <select name="" id="">
+      <option hidden selected>Seleccionar</option>
+       <option value="Comercial">Comercial</option> 
+       <option value="Residencial">Residencial</option> 
+       <option value="Mixta">Mixta</option> 
+      </select>
+    </div>
+    <div class="formdiv">
+      <label for="">Coord.</label>
+      <input type="text"  placeholder="ej: -34.595986,-58.3724715">
+    </div>
+    
+      <button class="btnadd">Agregar</button>
+   
+   
+   
+  </form>
 
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
   integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="

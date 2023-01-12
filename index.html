@@ -16,19 +16,19 @@
   <form action="">
     <div class="formdiv">
       <label for="name">Nombre</label>
-      <input type="text" placeholder="ej: AEROTERRA S.A.">
+      <input type="text" name="name" id="name" placeholder="ej: AEROTERRA S.A.">
     </div>
     <div class="formdiv">
-      <label for="">Dirección</label>
-      <input type="text"  placeholder="ej: Av. Eduardo Madero 1020">
+      <label for="address">Dirección</label>
+      <input type="text" name="address" id="address"  placeholder="ej: Av. Eduardo Madero 1020">
     </div class="formdiv">
     <div class="formdiv">
-      <label for="">Teléfono</label>
-      <input type="text"  placeholder="ej: 54 9 11 5272 0900">
+      <label for="phone">Teléfono</label>
+      <input type="text" name="phone" id="phone"  placeholder="ej: 54 9 11 5272 0900">
     </div>
     <div class="formdiv">
-      <label for="">Categoría</label>
-      <select name="" id="">
+      <label for="category">Categoría</label>
+      <select name="category" id="category">
       <option hidden selected>Seleccionar</option>
        <option value="Comercial">Comercial</option> 
        <option value="Residencial">Residencial</option> 
@@ -36,14 +36,14 @@
       </select>
     </div>
     <div class="formdiv">
-      <label for="">Coord.</label>
-      <input type="text"  placeholder="ej: -34.595986,-58.3724715">
+      <label for="cordLat">Coord. Lat</label>
+      <input type="number" name="cordLat" id="cordLat" step="any"  placeholder="ej: -34.595986"  min="-90" max="90">
     </div>
-    
-      <button class="btnadd">Agregar</button>
-   
-   
-   
+    <div class="formdiv">
+      <label for="cordLon">Coord. Lon</label>
+      <input type="number" name="cordLon" id="cordLon" step="any"  placeholder="ej: -58.3724715" min="-180" max="180">
+    </div>
+   <button type="submit" class="btnadd">Agregar</button>
   </form>
 
   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
